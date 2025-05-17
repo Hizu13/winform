@@ -1,0 +1,12 @@
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\bin\Debug\QuanLyQuanNetBTL.exe.config
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\bin\Debug\QuanLyQuanNetBTL.exe
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\bin\Debug\QuanLyQuanNetBTL.pdb
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.csproj.AssemblyReference.cache
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.Form1.resources
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.Properties.Resources.resources
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.csproj.GenerateResource.cache
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.csproj.CoreCompileInputs.cache
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.exe
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.pdb
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.FormTKMK.resources
+D:\Tu Hoc\window\QuanLyQuanNetBTL\QuanLyQuanNetBTL\obj\Debug\QuanLyQuanNetBTL.FormNap.resources
