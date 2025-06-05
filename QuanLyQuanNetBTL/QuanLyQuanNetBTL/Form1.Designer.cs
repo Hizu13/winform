@@ -86,6 +86,7 @@
             // btThem
             // 
             this.btThem.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThem.Location = new System.Drawing.Point(638, 3);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(159, 73);
@@ -101,25 +102,28 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 79);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 80);
+            this.panel1.Size = new System.Drawing.Size(800, 70);
             this.panel1.TabIndex = 1;
             // 
             // txtTim
             // 
             this.txtTim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTim.Location = new System.Drawing.Point(523, 34);
+            this.txtTim.Location = new System.Drawing.Point(523, 19);
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(170, 22);
             this.txtTim.TabIndex = 1;
+            this.txtTim.Tag = "";
+            this.txtTim.WordWrap = false;
             // 
             // btTIm
             // 
             this.btTIm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btTIm.Location = new System.Drawing.Point(713, 33);
+            this.btTIm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btTIm.Location = new System.Drawing.Point(713, 12);
             this.btTIm.Name = "btTIm";
-            this.btTIm.Size = new System.Drawing.Size(75, 23);
+            this.btTIm.Size = new System.Drawing.Size(75, 35);
             this.btTIm.TabIndex = 0;
             this.btTIm.Text = "Tìm";
             this.btTIm.UseVisualStyleBackColor = true;
@@ -127,6 +131,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -137,11 +145,12 @@
             this.Column5});
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 159);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 177);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 291);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 273);
             this.dataGridView1.TabIndex = 2;
             // 
             // id
@@ -149,30 +158,35 @@
             this.id.HeaderText = "ID";
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
+            this.id.ReadOnly = true;
             // 
             // taikhoan
             // 
             this.taikhoan.HeaderText = "Tài khoản";
             this.taikhoan.MinimumWidth = 6;
             this.taikhoan.Name = "taikhoan";
+            this.taikhoan.ReadOnly = true;
             // 
             // matkhau
             // 
             this.matkhau.HeaderText = "Mật khẩu";
             this.matkhau.MinimumWidth = 6;
             this.matkhau.Name = "matkhau";
+            this.matkhau.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Giờ chơi";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Số tiền";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // contextMenuStrip1
             // 
@@ -210,7 +224,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lọcToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 159);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 149);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 3;
@@ -218,6 +232,7 @@
             // 
             // lọcToolStripMenuItem
             // 
+            this.lọcToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.lọcToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tênAzToolStripMenuItem,
             this.tênZaToolStripMenuItem,
@@ -230,28 +245,28 @@
             // tênAzToolStripMenuItem
             // 
             this.tênAzToolStripMenuItem.Name = "tênAzToolStripMenuItem";
-            this.tênAzToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tênAzToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
             this.tênAzToolStripMenuItem.Text = "Tên a->z";
             this.tênAzToolStripMenuItem.Click += new System.EventHandler(this.tênAzToolStripMenuItem_Click);
             // 
             // tênZaToolStripMenuItem
             // 
             this.tênZaToolStripMenuItem.Name = "tênZaToolStripMenuItem";
-            this.tênZaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tênZaToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
             this.tênZaToolStripMenuItem.Text = "Tên z->a";
             this.tênZaToolStripMenuItem.Click += new System.EventHandler(this.tênZaToolStripMenuItem_Click);
             // 
             // giờChơiBéĐếnLớnToolStripMenuItem
             // 
             this.giờChơiBéĐếnLớnToolStripMenuItem.Name = "giờChơiBéĐếnLớnToolStripMenuItem";
-            this.giờChơiBéĐếnLớnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.giờChơiBéĐếnLớnToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
             this.giờChơiBéĐếnLớnToolStripMenuItem.Text = "Giờ chơi bé đến lớn";
             this.giờChơiBéĐếnLớnToolStripMenuItem.Click += new System.EventHandler(this.giờChơiBéĐếnLớnToolStripMenuItem_Click);
             // 
             // giờChơiLớnĐếnBéToolStripMenuItem
             // 
             this.giờChơiLớnĐếnBéToolStripMenuItem.Name = "giờChơiLớnĐếnBéToolStripMenuItem";
-            this.giờChơiLớnĐếnBéToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.giờChơiLớnĐếnBéToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
             this.giờChơiLớnĐếnBéToolStripMenuItem.Text = "Giờ chơi lớn đến bé";
             this.giờChơiLớnĐếnBéToolStripMenuItem.Click += new System.EventHandler(this.giờChơiLớnĐếnBéToolStripMenuItem_Click);
             // 
@@ -260,8 +275,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MainMenuStrip = this.menuStrip1;

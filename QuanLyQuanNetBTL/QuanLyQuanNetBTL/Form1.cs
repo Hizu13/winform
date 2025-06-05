@@ -24,6 +24,7 @@ namespace QuanLyQuanNetBTL
         }
         public void hienthi()
         {
+            ketnoi = new SqlConnection(chuoiketnoi);
             ketnoi.Open();
             sql = "select * from nguoidung";
             thucthi = new SqlCommand(sql, ketnoi);
@@ -34,8 +35,8 @@ namespace QuanLyQuanNetBTL
                     docdulieu[0].ToString(),
                     docdulieu[1].ToString(),
                     docdulieu[2].ToString(),
-                    docdulieu[3].ToString(),
-                    docdulieu[4].ToString()
+                    docdulieu[4].ToString(),
+                    docdulieu[3].ToString()
                     );
             }
             ketnoi.Close();
@@ -99,8 +100,8 @@ namespace QuanLyQuanNetBTL
                     docdulieu[0].ToString(),
                     docdulieu[1].ToString(),
                     docdulieu[2].ToString(),
-                    docdulieu[3].ToString(),
-                    docdulieu[4].ToString()
+                    docdulieu[4].ToString(),
+                    docdulieu[3].ToString()
                     );
             }
         }
@@ -151,8 +152,8 @@ namespace QuanLyQuanNetBTL
                     docdulieu[0].ToString(),
                     docdulieu[1].ToString(),
                     docdulieu[2].ToString(),
-                    docdulieu[3].ToString(),
-                    docdulieu[4].ToString()
+                    docdulieu[4].ToString(),
+                    docdulieu[3].ToString()
                     );
             }
             docdulieu.Close();
@@ -172,8 +173,8 @@ namespace QuanLyQuanNetBTL
                     docdulieu[0].ToString(),
                     docdulieu[1].ToString(),
                     docdulieu[2].ToString(),
-                    docdulieu[3].ToString(),
-                    docdulieu[4].ToString()
+                    docdulieu[4].ToString(),
+                    docdulieu[3].ToString()
                     );
             }
             docdulieu.Close();
@@ -193,8 +194,8 @@ namespace QuanLyQuanNetBTL
                     docdulieu[0].ToString(),
                     docdulieu[1].ToString(),
                     docdulieu[2].ToString(),
-                    docdulieu[3].ToString(),
-                    docdulieu[4].ToString()
+                    docdulieu[4].ToString(),
+                    docdulieu[3].ToString()
                     );
             }
             docdulieu.Close();
@@ -214,8 +215,8 @@ namespace QuanLyQuanNetBTL
                     docdulieu[0].ToString(),
                     docdulieu[1].ToString(),
                     docdulieu[2].ToString(),
-                    docdulieu[3].ToString(),
-                    docdulieu[4].ToString()
+                    docdulieu[4].ToString(),
+                    docdulieu[3].ToString()
                     );
             }
             docdulieu.Close();

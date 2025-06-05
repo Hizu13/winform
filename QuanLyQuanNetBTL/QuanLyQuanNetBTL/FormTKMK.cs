@@ -54,7 +54,7 @@ namespace QuanLyQuanNetBTL
                     thucthi.Parameters.AddWithValue("@mk", txtMK.Text.Trim());
                     thucthi.Parameters.AddWithValue("@tk", taikhoanCu);
                     thucthi.ExecuteNonQuery();
-                    MessageBox.Show("✅ Cập nhật thành công!");
+                    MessageBox.Show("Cập nhật thành công!");
                 }
                 else
                 {
@@ -64,7 +64,7 @@ namespace QuanLyQuanNetBTL
                     thucthi.Parameters.AddWithValue("@tk", txtTK.Text.Trim());
                     thucthi.Parameters.AddWithValue("@mk", txtMK.Text.Trim());
                     thucthi.ExecuteNonQuery();
-                    MessageBox.Show("✅ Tạo tài khoản thành công!");
+                    MessageBox.Show("Tạo tài khoản thành công!");
                 }
 
                 this.Close();
@@ -72,14 +72,15 @@ namespace QuanLyQuanNetBTL
             catch (SqlException ex)
             {
                 if (ex.Message.Contains("UNIQUE KEY"))
-                    MessageBox.Show("❌ Tài khoản đã tồn tại.");
+                    MessageBox.Show("Tài khoản đã tồn tại.");
                 else
-                    MessageBox.Show("❌ Lỗi: " + ex.Message);
+                    MessageBox.Show("Lỗi: " + ex.Message);
             }
             finally
             {
                 if (ketnoi.State == ConnectionState.Open)
                     ketnoi.Close();
+                
             }
         }
         

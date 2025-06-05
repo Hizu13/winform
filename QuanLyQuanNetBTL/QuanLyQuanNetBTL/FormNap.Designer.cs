@@ -82,19 +82,21 @@
             // 
             // txtTien
             // 
-            this.txtTien.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtTien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTien.Location = new System.Drawing.Point(190, 3);
             this.txtTien.Name = "txtTien";
-            this.txtTien.Size = new System.Drawing.Size(124, 22);
+            this.txtTien.Size = new System.Drawing.Size(182, 22);
             this.txtTien.TabIndex = 2;
             // 
             // txtGio
             // 
-            this.txtGio.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtGio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtGio.Location = new System.Drawing.Point(190, 64);
             this.txtGio.Name = "txtGio";
             this.txtGio.ReadOnly = true;
-            this.txtGio.Size = new System.Drawing.Size(124, 22);
+            this.txtGio.Size = new System.Drawing.Size(182, 22);
             this.txtGio.TabIndex = 3;
             // 
             // panel1
@@ -109,21 +111,25 @@
             // 
             // btFNHUY
             // 
-            this.btFNHUY.Location = new System.Drawing.Point(302, 37);
+            this.btFNHUY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btFNHUY.Location = new System.Drawing.Point(275, 24);
             this.btFNHUY.Name = "btFNHUY";
-            this.btFNHUY.Size = new System.Drawing.Size(61, 30);
+            this.btFNHUY.Size = new System.Drawing.Size(88, 43);
             this.btFNHUY.TabIndex = 1;
             this.btFNHUY.Text = "Cancel";
             this.btFNHUY.UseVisualStyleBackColor = true;
             // 
             // btFNOK
             // 
-            this.btFNOK.Location = new System.Drawing.Point(204, 37);
+            this.btFNOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btFNOK.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btFNOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btFNOK.Location = new System.Drawing.Point(177, 24);
             this.btFNOK.Name = "btFNOK";
-            this.btFNOK.Size = new System.Drawing.Size(61, 30);
+            this.btFNOK.Size = new System.Drawing.Size(88, 43);
             this.btFNOK.TabIndex = 0;
             this.btFNOK.Text = "OK";
-            this.btFNOK.UseVisualStyleBackColor = true;
+            this.btFNOK.UseVisualStyleBackColor = false;
             this.btFNOK.Click += new System.EventHandler(this.btFNOK_Click);
             // 
             // FormNap
@@ -134,7 +140,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormNap";
-            this.Text = "FormNap";
+            this.Text = "Nạp tiền";
             this.Load += new System.EventHandler(this.FormNap_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

@@ -41,12 +41,12 @@ namespace QuanLyQuanNetBTL
                 thucthi.Parameters.AddWithValue("@tk", taikhoan);
                 thucthi.ExecuteNonQuery();
 
-                MessageBox.Show("✅ Nạp tiền thành công!");
+                MessageBox.Show("Nạp tiền thành công!");
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("❌ Lỗi: " + ex.Message);
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
             finally
             {

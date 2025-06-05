@@ -80,18 +80,20 @@
             // 
             // txtTK
             // 
-            this.txtTK.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtTK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTK.Location = new System.Drawing.Point(194, 3);
             this.txtTK.Name = "txtTK";
-            this.txtTK.Size = new System.Drawing.Size(143, 22);
+            this.txtTK.Size = new System.Drawing.Size(186, 22);
             this.txtTK.TabIndex = 2;
             // 
             // txtMK
             // 
-            this.txtMK.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtMK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMK.Location = new System.Drawing.Point(194, 56);
             this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(143, 22);
+            this.txtMK.Size = new System.Drawing.Size(186, 22);
             this.txtMK.TabIndex = 3;
             // 
             // panel1
@@ -106,9 +108,10 @@
             // 
             // btHUY
             // 
-            this.btHUY.Location = new System.Drawing.Point(296, 30);
+            this.btHUY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btHUY.Location = new System.Drawing.Point(275, 23);
             this.btHUY.Name = "btHUY";
-            this.btHUY.Size = new System.Drawing.Size(75, 31);
+            this.btHUY.Size = new System.Drawing.Size(96, 38);
             this.btHUY.TabIndex = 1;
             this.btHUY.Text = "Cancel";
             this.btHUY.UseVisualStyleBackColor = true;
@@ -116,12 +119,16 @@
             // 
             // btOK
             // 
-            this.btOK.Location = new System.Drawing.Point(194, 30);
+            this.btOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btOK.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btOK.Location = new System.Drawing.Point(173, 23);
             this.btOK.Name = "btOK";
-            this.btOK.Size = new System.Drawing.Size(75, 31);
+            this.btOK.Size = new System.Drawing.Size(96, 38);
             this.btOK.TabIndex = 0;
             this.btOK.Text = "OK";
-            this.btOK.UseVisualStyleBackColor = true;
+            this.btOK.UseVisualStyleBackColor = false;
             this.btOK.Click += new System.EventHandler(this.btOK_Click);
             // 
             // FormTKMK
@@ -132,7 +139,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormTKMK";
-            this.Text = "FormTKMK";
+            this.Text = "Thông tin tài khoản";
             this.Load += new System.EventHandler(this.FormTKMK_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
