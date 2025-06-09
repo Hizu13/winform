@@ -31,7 +31,7 @@ namespace QuanLyQuanNetBTL
             try
             {
                 int tienNap = int.Parse(txtTien.Text.Trim());
-                double gioThem = tienNap / 10000;
+                double gioThem = (double)tienNap / 10000.00;
 
                 ketnoi.Open();
                 string sql = "UPDATE nguoidung SET tien = tien + @tien, giochoi = giochoi + @gio WHERE taikhoan = @tk";
@@ -60,6 +60,19 @@ namespace QuanLyQuanNetBTL
         private void FormNap_Load(object sender, EventArgs e)
         {
             ketnoi = new SqlConnection(chuoiketnoi);
+        }
+
+        private void btFNHUY_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtTien_TextChanged(object sender, EventArgs e)
+        {
+            int tienNap = int.Parse(txtTien.Text.Trim());
+            double gioThem = (double)tienNap / 10000.00;
+            txtGio.Text = gioThem.ToString("F2"); // Hiển thị số giờ được thêm, định dạng 2 chữ số thập phân
+
         }
     }
 }

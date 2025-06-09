@@ -139,6 +139,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormTKMK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin tài khoản";
             this.Load += new System.EventHandler(this.FormTKMK_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -89,9 +89,8 @@ namespace QuanLyQuanNetBTL
         {
             dataGridView1.Rows.Clear();
             ketnoi.Open();
-            sql = "select * from nguoidung where id like @id or taikhoan like @taikhoan";
+            sql = "select * from nguoidung where taikhoan like @taikhoan";
             thucthi = new SqlCommand(sql, ketnoi);
-            thucthi.Parameters.AddWithValue("@id", "%" + txtTim.Text + "%");
             thucthi.Parameters.AddWithValue("@taikhoan", "%" + txtTim.Text + "%");
             docdulieu = thucthi.ExecuteReader();
             while (docdulieu.Read())
@@ -104,12 +103,14 @@ namespace QuanLyQuanNetBTL
                     docdulieu[3].ToString()
                     );
             }
+            ketnoi.Close();
         }
-
+        FormTKMK fThem = new FormTKMK();
         private void btThem_Click(object sender, EventArgs e)
         {
-            FormTKMK fThem = new FormTKMK();
-            fThem.Show();
+            fThem.ShowDialog();
+            dataGridView1.Rows.Clear(); // Xóa hiển thị cũ
+            hienthi();
         }
 
         private void nạpTiềnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -221,6 +222,21 @@ namespace QuanLyQuanNetBTL
             }
             docdulieu.Close();
             ketnoi.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

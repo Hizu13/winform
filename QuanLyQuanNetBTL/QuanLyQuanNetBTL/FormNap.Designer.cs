@@ -88,6 +88,7 @@
             this.txtTien.Name = "txtTien";
             this.txtTien.Size = new System.Drawing.Size(182, 22);
             this.txtTien.TabIndex = 2;
+            this.txtTien.TextChanged += new System.EventHandler(this.txtTien_TextChanged);
             // 
             // txtGio
             // 
@@ -118,6 +119,7 @@
             this.btFNHUY.TabIndex = 1;
             this.btFNHUY.Text = "Cancel";
             this.btFNHUY.UseVisualStyleBackColor = true;
+            this.btFNHUY.Click += new System.EventHandler(this.btFNHUY_Click);
             // 
             // btFNOK
             // 
@@ -140,6 +142,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormNap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nạp tiền";
             this.Load += new System.EventHandler(this.FormNap_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
